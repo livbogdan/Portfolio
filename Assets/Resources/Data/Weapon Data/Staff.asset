@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03286a330db2326409fd70e2b4c01a29, type: 3}
+  m_Name: Staff
+  m_EditorClassIdentifier: 
+  <Prefab>k__BackingField: {fileID: 2420139179639633003, guid: 8d5718b3d56036a4ab7de56293498d23, type: 3}
+  <WeaponName>k__BackingField: Staff
+  <WeaponDescription>k__BackingField: 
+  <WeaponSprite>k__BackingField: {fileID: 21300000, guid: 2f92fd559cbd36546a8c6589931821af, type: 3}
+  <Price>k__BackingField: 700
+  <RecyclePrice>k__BackingField: 350
+  <AttackSound>k__BackingField: {fileID: 8300000, guid: 8ad24ac0472150243b8e171f1767126c, type: 3}
+  <AnimatorOverrideController>k__BackingField: {fileID: 22100000, guid: 9ff84f4feb003a64c8608ce6594a0c3a, type: 2}
+  _attack: 30
+  _attackSpeed: 0.8
+  _criticalChance: 25
+  _criticalPercent: 1.6
+  _Range: 10
+  _lifeSteal: 0

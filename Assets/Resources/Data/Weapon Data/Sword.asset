@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03286a330db2326409fd70e2b4c01a29, type: 3}
+  m_Name: Sword
+  m_EditorClassIdentifier: 
+  <Prefab>k__BackingField: {fileID: 1390899660697855122, guid: f4f72dbf47f515043a41908eb56d8a09, type: 3}
+  <WeaponName>k__BackingField: Balance
+  <WeaponDescription>k__BackingField: 
+  <WeaponSprite>k__BackingField: {fileID: 21300000, guid: 965129895f783004e928eb620f4d2820, type: 3}
+  <Price>k__BackingField: 300
+  <RecyclePrice>k__BackingField: 150
+  <AttackSound>k__BackingField: {fileID: 8300000, guid: 7090f29a56f41874ba4c9db11d517f62, type: 3}
+  <AnimatorOverrideController>k__BackingField: {fileID: 22100000, guid: 97c5f754f3a779b4ead06f762210c36d, type: 2}
+  _attack: 25
+  _attackSpeed: 1
+  _criticalChance: 20
+  _criticalPercent: 1.5
+  _Range: 3
+  _lifeSteal: 5

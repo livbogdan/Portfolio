@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03286a330db2326409fd70e2b4c01a29, type: 3}
+  m_Name: Axe
+  m_EditorClassIdentifier: 
+  <Prefab>k__BackingField: {fileID: 1390899660697855122, guid: 575f233143e4f62499c03a0a855808af, type: 3}
+  <WeaponName>k__BackingField: Heavy Cleavy
+  <WeaponDescription>k__BackingField: 
+  <WeaponSprite>k__BackingField: {fileID: 21300000, guid: 7acf49b54bf29df41aadef6a2ed5e2cb, type: 3}
+  <Price>k__BackingField: 500
+  <RecyclePrice>k__BackingField: 250
+  <AttackSound>k__BackingField: {fileID: 8300000, guid: 5f93e6ebb29be4a419e2036c656fb9bc, type: 3}
+  <AnimatorOverrideController>k__BackingField: {fileID: 22100000, guid: fffab5a69299c274a8ada3bcd3a8adb2, type: 2}
+  _attack: 40
+  _attackSpeed: 0.6
+  _criticalChance: 12
+  _criticalPercent: 2.2
+  _Range: 2.8
+  _lifeSteal: 8

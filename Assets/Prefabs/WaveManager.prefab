@@ -1,0 +1,566 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4880463339307487
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 678306834467739073}
+  - component: {fileID: 6306930620368959469}
+  - component: {fileID: 1526143878635137532}
+  m_Layer: 0
+  m_Name: WaveManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &678306834467739073
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4880463339307487}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6306930620368959469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4880463339307487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f53a0b84ecc64f4abf470c015f9748f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _player: {fileID: 0}
+  _minOfset: 8
+  _maxOffset: 15
+  _waves:
+  - _waveDuration: 45
+    _name: 'Wave 1: Tutorial'
+    _segments:
+    - _name: 
+      _TStartEnd: {x: 0, y: 100}
+      _spawnSequence: 1
+      _enemies:
+      - _enemyPrefab: {fileID: 163513941162377340, guid: b31a7e9ad5622b84abfe072239aa06ff, type: 3}
+        _spawnWeight: 100
+      _spawnOnce: 0
+  - _waveDuration: 50
+    _name: 'Wave 2: Basic Combat'
+    _segments:
+    - _name: 
+      _TStartEnd: {x: 0, y: 60}
+      _spawnSequence: 1.2
+      _enemies:
+      - _enemyPrefab: {fileID: 163513941162377340, guid: b31a7e9ad5622b84abfe072239aa06ff, type: 3}
+        _spawnWeight: 100
+      _spawnOnce: 0
+    - _name: 
+      _TStartEnd: {x: 60, y: 100}
+      _spawnSequence: 1.2
+      _enemies:
+      - _enemyPrefab: {fileID: 163513941162377340, guid: b31a7e9ad5622b84abfe072239aa06ff, type: 3}
+        _spawnWeight: 80
+      - _enemyPrefab: {fileID: 163513941162377340, guid: 29e43865d29c369419bd810fac8e7dfe, type: 3}
+        _spawnWeight: 20
+      _spawnOnce: 0
+  - _waveDuration: 55
+    _name: 'Wave 3: Enemy Variety'
+    _segments:
+    - _name: 
+      _TStartEnd: {x: 0, y: 50}
+      _spawnSequence: 1.4
+      _enemies:
+      - _enemyPrefab: {fileID: 163513941162377340, guid: b31a7e9ad5622b84abfe072239aa06ff, type: 3}
+        _spawnWeight: 60
+      - _enemyPrefab: {fileID: 163513941162377340, guid: 29e43865d29c369419bd810fac8e7dfe, type: 3}
+        _spawnWeight: 40
+      _spawnOnce: 0
+    - _name: 
+      _TStartEnd: {x: 50, y: 100}
+      _spawnSequence: 1.4
+      _enemies:
+      - _enemyPrefab: {fileID: 163513941162377340, guid: b31a7e9ad5622b84abfe072239aa06ff, type: 3}
+        _spawnWeight: 40
+      - _enemyPrefab: {fileID: 163513941162377340, guid: 29e43865d29c369419bd810fac8e7dfe, type: 3}
+        _spawnWeight: 40
+      - _enemyPrefab: {fileID: 260376984635252496, guid: 5b534126a1015d449b44e75c859cfa3f, type: 3}
+        _spawnWeight: 20
+      _spawnOnce: 0
+  - _waveDuration: 60
+    _name: 'Wave 4: Ranged Introduction'
+    _segments:
+    - _name: 
+      _TStartEnd: {x: 0, y: 40}
+      _spawnSequence: 1.6
+      _enemies:
+      - _enemyPrefab: {fileID: 163513941162377340, guid: b31a7e9ad5622b84abfe072239aa06ff, type: 3}
+        _spawnWeight: 70
+      - _enemyPrefab: {fileID: 163513941162377340, guid: 29e43865d29c369419bd810fac8e7dfe, type: 3}
+        _spawnWeight: 30
+      _spawnOnce: 0
+    - _name: 
+      _TStartEnd: {x: 40, y: 80}
+      _spawnSequence: 1.6
+      _enemies:
+      - _enemyPrefab: {fileID: 163513941162377340, guid: 29e43865d29c369419bd810fac8e7dfe, type: 3}
+        _spawnWeight: 50
+      - _enemyPrefab: {fileID: 260376984635252496, guid: 5b534126a1015d449b44e75c859cfa3f, type: 3}
+        _spawnWeight: 50
+      _spawnOnce: 0
+    - _name: 
+      _TStartEnd: {x: 80, y: 100}
+      _spawnSequence: 1.6
+      _enemies:
+      - _enemyPrefab: {fileID: 163513941162377340, guid: b31a7e9ad5622b84abfe072239aa06ff, type: 3}
+        _spawnWeight: 30
+      - _enemyPrefab: {fileID: 163513941162377340, guid: 29e43865d29c369419bd810fac8e7dfe, type: 3}
+        _spawnWeight: 40
+      - _enemyPrefab: {fileID: 260376984635252496, guid: 5b534126a1015d449b44e75c859cfa3f, type: 3}
+        _spawnWeight: 30
+      _spawnOnce: 0
+  - _waveDuration: 65
+    _name: 'Wave 5: First Challenge'
+    _segments:
+    - _name: 
+      _TStartEnd: {x: 0, y: 30}
+      _spawnSequence: 1.8
+      _enemies:
+      - _enemyPrefab: {fileID: 163513941162377340, guid: b31a7e9ad5622b84abfe072239aa06ff, type: 3}
+        _spawnWeight: 50
+      - _enemyPrefab: {fileID: 163513941162377340, guid: 29e43865d29c369419bd810fac8e7dfe, type: 3}
+        _spawnWeight: 50
+      _spawnOnce: 0
+    - _name: 
+      _TStartEnd: {x: 30, y: 70}
+      _spawnSequence: 1.8
+      _enemies:
+      - _enemyPrefab: {fileID: 163513941162377340, guid: 29e43865d29c369419bd810fac8e7dfe, type: 3}
+        _spawnWeight: 60
+      - _enemyPrefab: {fileID: 260376984635252496, guid: 5b534126a1015d449b44e75c859cfa3f, type: 3}
+        _spawnWeight: 40
+      _spawnOnce: 0
+    - _name: 
+      _TStartEnd: {x: 70, y: 100}
+      _spawnSequence: 1.8
+      _enemies:
+      - _enemyPrefab: {fileID: 163513941162377340, guid: 29e43865d29c369419bd810fac8e7dfe, type: 3}
+        _spawnWeight: 40
+      - _enemyPrefab: {fileID: 163513941162377340, guid: 5bc0f3b37cf55ff49832fe3ae067c307, type: 3}
+        _spawnWeight: 30
+      - _enemyPrefab: {fileID: 260376984635252496, guid: 5b534126a1015d449b44e75c859cfa3f, type: 3}
+        _spawnWeight: 30
+      _spawnOnce: 0
+  - _waveDuration: 70
+    _name: 'Wave 6: Heavy Enemies'
+    _segments:
+    - _name: 
+      _TStartEnd: {x: 0, y: 40}
+      _spawnSequence: 2
+      _enemies:
+      - _enemyPrefab: {fileID: 163513941162377340, guid: 29e43865d29c369419bd810fac8e7dfe, type: 3}
+        _spawnWeight: 60
+      - _enemyPrefab: {fileID: 260376984635252496, guid: 5b534126a1015d449b44e75c859cfa3f, type: 3}
+        _spawnWeight: 40
+      _spawnOnce: 0
+    - _name: 
+      _TStartEnd: {x: 40, y: 80}
+      _spawnSequence: 2
+      _enemies:
+      - _enemyPrefab: {fileID: 163513941162377340, guid: 5bc0f3b37cf55ff49832fe3ae067c307, type: 3}
+        _spawnWeight: 50
+      - _enemyPrefab: {fileID: 260376984635252496, guid: 5b534126a1015d449b44e75c859cfa3f, type: 3}
+        _spawnWeight: 50
+      _spawnOnce: 0
+    - _name: 
+      _TStartEnd: {x: 40, y: 80}
+      _spawnSequence: 2
+      _enemies:
+      - _enemyPrefab: {fileID: 163513941162377340, guid: 5bc0f3b37cf55ff49832fe3ae067c307, type: 3}
+        _spawnWeight: 60
+      - _enemyPrefab: {fileID: 260376984635252496, guid: 5b534126a1015d449b44e75c859cfa3f, type: 3}
+        _spawnWeight: 40
+      _spawnOnce: 0
+  - _waveDuration: 75
+    _name: 'Wave 7: Mixed Assault'
+    _segments:
+    - _name: 
+      _TStartEnd: {x: 0, y: 25}
+      _spawnSequence: 2.2
+      _enemies:
+      - _enemyPrefab: {fileID: 163513941162377340, guid: b31a7e9ad5622b84abfe072239aa06ff, type: 3}
+        _spawnWeight: 40
+      - _enemyPrefab: {fileID: 163513941162377340, guid: 29e43865d29c369419bd810fac8e7dfe, type: 3}
+        _spawnWeight: 60
+      _spawnOnce: 0
+    - _name: 
+      _TStartEnd: {x: 25, y: 50}
+      _spawnSequence: 2.2
+      _enemies:
+      - _enemyPrefab: {fileID: 163513941162377340, guid: 29e43865d29c369419bd810fac8e7dfe, type: 3}
+        _spawnWeight: 50
+      - _enemyPrefab: {fileID: 163513941162377340, guid: 5bc0f3b37cf55ff49832fe3ae067c307, type: 3}
+        _spawnWeight: 50
+      _spawnOnce: 0
+    - _name: 
+      _TStartEnd: {x: 50, y: 75}
+      _spawnSequence: 2.2
+      _enemies:
+      - _enemyPrefab: {fileID: 163513941162377340, guid: 5bc0f3b37cf55ff49832fe3ae067c307, type: 3}
+        _spawnWeight: 40
+      - _enemyPrefab: {fileID: 260376984635252496, guid: 5b534126a1015d449b44e75c859cfa3f, type: 3}
+        _spawnWeight: 60
+      _spawnOnce: 0
+    - _name: 
+      _TStartEnd: {x: 75, y: 100}
+      _spawnSequence: 2.2
+      _enemies:
+      - _enemyPrefab: {fileID: 163513941162377340, guid: 5bc0f3b37cf55ff49832fe3ae067c307, type: 3}
+        _spawnWeight: 70
+      - _enemyPrefab: {fileID: 260376984635252496, guid: d4f242fbd15f00f4c944eca8d13fc083, type: 3}
+        _spawnWeight: 30
+      _spawnOnce: 0
+  - _waveDuration: 80
+    _name: 'Wave 8: Ranged Focus'
+    _segments:
+    - _name: 
+      _TStartEnd: {x: 0, y: 35}
+      _spawnSequence: 2.4
+      _enemies:
+      - _enemyPrefab: {fileID: 163513941162377340, guid: 29e43865d29c369419bd810fac8e7dfe, type: 3}
+        _spawnWeight: 30
+      - _enemyPrefab: {fileID: 260376984635252496, guid: d4f242fbd15f00f4c944eca8d13fc083, type: 3}
+        _spawnWeight: 70
+      _spawnOnce: 0
+    - _name: 
+      _TStartEnd: {x: 35, y: 70}
+      _spawnSequence: 2.4
+      _enemies:
+      - _enemyPrefab: {fileID: 163513941162377340, guid: 5bc0f3b37cf55ff49832fe3ae067c307, type: 3}
+        _spawnWeight: 25
+      - _enemyPrefab: {fileID: 260376984635252496, guid: 5b534126a1015d449b44e75c859cfa3f, type: 3}
+        _spawnWeight: 75
+      _spawnOnce: 0
+    - _name: 
+      _TStartEnd: {x: 70, y: 100}
+      _spawnSequence: 2.4
+      _enemies:
+      - _enemyPrefab: {fileID: 163513941162377340, guid: 5bc0f3b37cf55ff49832fe3ae067c307, type: 3}
+        _spawnWeight: 30
+      - _enemyPrefab: {fileID: 260376984635252496, guid: 5b534126a1015d449b44e75c859cfa3f, type: 3}
+        _spawnWeight: 70
+      _spawnOnce: 0
+  - _waveDuration: 85
+    _name: 'Wave 9: Elite Forces'
+    _segments:
+    - _name: 
+      _TStartEnd: {x: 0, y: 30}
+      _spawnSequence: 2.6
+      _enemies:
+      - _enemyPrefab: {fileID: 163513941162377340, guid: 29e43865d29c369419bd810fac8e7dfe, type: 3}
+        _spawnWeight: 40
+      - _enemyPrefab: {fileID: 163513941162377340, guid: 5bc0f3b37cf55ff49832fe3ae067c307, type: 3}
+        _spawnWeight: 60
+      _spawnOnce: 0
+    - _name: 
+      _TStartEnd: {x: 30, y: 60}
+      _spawnSequence: 2.6
+      _enemies:
+      - _enemyPrefab: {fileID: 163513941162377340, guid: 5bc0f3b37cf55ff49832fe3ae067c307, type: 3}
+        _spawnWeight: 50
+      - _enemyPrefab: {fileID: 260376984635252496, guid: 5b534126a1015d449b44e75c859cfa3f, type: 3}
+        _spawnWeight: 50
+      _spawnOnce: 0
+    - _name: 
+      _TStartEnd: {x: 60, y: 90}
+      _spawnSequence: 2.6
+      _enemies:
+      - _enemyPrefab: {fileID: 163513941162377340, guid: 5bc0f3b37cf55ff49832fe3ae067c307, type: 3}
+        _spawnWeight: 60
+      - _enemyPrefab: {fileID: 260376984635252496, guid: 5b534126a1015d449b44e75c859cfa3f, type: 3}
+        _spawnWeight: 40
+      _spawnOnce: 0
+    - _name: 
+      _TStartEnd: {x: 90, y: 100}
+      _spawnSequence: 2.6
+      _enemies:
+      - _enemyPrefab: {fileID: 163513941162377340, guid: 5bc0f3b37cf55ff49832fe3ae067c307, type: 3}
+        _spawnWeight: 80
+      - _enemyPrefab: {fileID: 260376984635252496, guid: 5b534126a1015d449b44e75c859cfa3f, type: 3}
+        _spawnWeight: 20
+      _spawnOnce: 0
+  - _waveDuration: 95
+    _name: 'Wave 10: Boss Wave'
+    _segments:
+    - _name: 
+      _TStartEnd: {x: 0, y: 20}
+      _spawnSequence: 2.8
+      _enemies:
+      - _enemyPrefab: {fileID: 163513941162377340, guid: 29e43865d29c369419bd810fac8e7dfe, type: 3}
+        _spawnWeight: 100
+      _spawnOnce: 0
+    - _name: 
+      _TStartEnd: {x: 20, y: 40}
+      _spawnSequence: 2.8
+      _enemies:
+      - _enemyPrefab: {fileID: 163513941162377340, guid: 5bc0f3b37cf55ff49832fe3ae067c307, type: 3}
+        _spawnWeight: 70
+      - _enemyPrefab: {fileID: 260376984635252496, guid: 5b534126a1015d449b44e75c859cfa3f, type: 3}
+        _spawnWeight: 30
+      _spawnOnce: 0
+    - _name: 
+      _TStartEnd: {x: 40, y: 60}
+      _spawnSequence: 2.8
+      _enemies:
+      - _enemyPrefab: {fileID: 163513941162377340, guid: 5bc0f3b37cf55ff49832fe3ae067c307, type: 3}
+        _spawnWeight: 50
+      - _enemyPrefab: {fileID: 260376984635252496, guid: 5b534126a1015d449b44e75c859cfa3f, type: 3}
+        _spawnWeight: 50
+      _spawnOnce: 0
+    - _name: 
+      _TStartEnd: {x: 60, y: 80}
+      _spawnSequence: 2.8
+      _enemies:
+      - _enemyPrefab: {fileID: 163513941162377340, guid: 5bc0f3b37cf55ff49832fe3ae067c307, type: 3}
+        _spawnWeight: 60
+      - _enemyPrefab: {fileID: 260376984635252496, guid: 5b534126a1015d449b44e75c859cfa3f, type: 3}
+        _spawnWeight: 40
+      _spawnOnce: 0
+    - _name: 
+      _TStartEnd: {x: 80, y: 100}
+      _spawnSequence: 2.8
+      _enemies:
+      - _enemyPrefab: {fileID: 163513941162377340, guid: a07ab6d8ae34fbe409e0c9f3664e8964, type: 3}
+        _spawnWeight: 100
+      _spawnOnce: 1
+  - _waveDuration: 95
+    _name: 'Wave 11: Overwhelming Force'
+    _segments:
+    - _name: 
+      _TStartEnd: {x: 0, y: 30}
+      _spawnSequence: 3
+      _enemies:
+      - _enemyPrefab: {fileID: 163513941162377340, guid: 5bc0f3b37cf55ff49832fe3ae067c307, type: 3}
+        _spawnWeight: 60
+      - _enemyPrefab: {fileID: 260376984635252496, guid: 5b534126a1015d449b44e75c859cfa3f, type: 3}
+        _spawnWeight: 40
+      _spawnOnce: 0
+    - _name: 
+      _TStartEnd: {x: 30, y: 60}
+      _spawnSequence: 3
+      _enemies:
+      - _enemyPrefab: {fileID: 163513941162377340, guid: 5bc0f3b37cf55ff49832fe3ae067c307, type: 3}
+        _spawnWeight: 50
+      - _enemyPrefab: {fileID: 260376984635252496, guid: 5b534126a1015d449b44e75c859cfa3f, type: 3}
+        _spawnWeight: 50
+      _spawnOnce: 0
+    - _name: 
+      _TStartEnd: {x: 60, y: 85}
+      _spawnSequence: 3
+      _enemies:
+      - _enemyPrefab: {fileID: 163513941162377340, guid: 5bc0f3b37cf55ff49832fe3ae067c307, type: 3}
+        _spawnWeight: 70
+      - _enemyPrefab: {fileID: 260376984635252496, guid: 5b534126a1015d449b44e75c859cfa3f, type: 3}
+        _spawnWeight: 30
+      _spawnOnce: 0
+    - _name: 
+      _TStartEnd: {x: 85, y: 100}
+      _spawnSequence: 3
+      _enemies:
+      - _enemyPrefab: {fileID: 163513941162377340, guid: 5bc0f3b37cf55ff49832fe3ae067c307, type: 3}
+        _spawnWeight: 80
+      - _enemyPrefab: {fileID: 260376984635252496, guid: 5b534126a1015d449b44e75c859cfa3f, type: 3}
+        _spawnWeight: 20
+      _spawnOnce: 0
+  - _waveDuration: 100
+    _name: 'Wave 12: Speed Test'
+    _segments:
+    - _name: 
+      _TStartEnd: {x: 0, y: 25}
+      _spawnSequence: 3.2
+      _enemies:
+      - _enemyPrefab: {fileID: 163513941162377340, guid: b31a7e9ad5622b84abfe072239aa06ff, type: 3}
+        _spawnWeight: 60
+      - _enemyPrefab: {fileID: 163513941162377340, guid: 29e43865d29c369419bd810fac8e7dfe, type: 3}
+        _spawnWeight: 40
+      _spawnOnce: 0
+    - _name: 
+      _TStartEnd: {x: 25, y: 50}
+      _spawnSequence: 3.2
+      _enemies:
+      - _enemyPrefab: {fileID: 163513941162377340, guid: 29e43865d29c369419bd810fac8e7dfe, type: 3}
+        _spawnWeight: 50
+      - _enemyPrefab: {fileID: 163513941162377340, guid: 5bc0f3b37cf55ff49832fe3ae067c307, type: 3}
+        _spawnWeight: 50
+      _spawnOnce: 0
+    - _name: 
+      _TStartEnd: {x: 50, y: 75}
+      _spawnSequence: 3.2
+      _enemies:
+      - _enemyPrefab: {fileID: 163513941162377340, guid: 5bc0f3b37cf55ff49832fe3ae067c307, type: 3}
+        _spawnWeight: 40
+      - _enemyPrefab: {fileID: 260376984635252496, guid: 5b534126a1015d449b44e75c859cfa3f, type: 3}
+        _spawnWeight: 60
+      _spawnOnce: 0
+    - _name: 
+      _TStartEnd: {x: 75.00001, y: 100}
+      _spawnSequence: 3.2
+      _enemies:
+      - _enemyPrefab: {fileID: 163513941162377340, guid: 5bc0f3b37cf55ff49832fe3ae067c307, type: 3}
+        _spawnWeight: 60
+      - _enemyPrefab: {fileID: 260376984635252496, guid: 5b534126a1015d449b44e75c859cfa3f, type: 3}
+        _spawnWeight: 40
+      _spawnOnce: 0
+  - _waveDuration: 105
+    _name: 'Wave 13: Elite Swarm'
+    _segments:
+    - _name: 
+      _TStartEnd: {x: 0, y: 40}
+      _spawnSequence: 3.4
+      _enemies:
+      - _enemyPrefab: {fileID: 163513941162377340, guid: 5bc0f3b37cf55ff49832fe3ae067c307, type: 3}
+        _spawnWeight: 70
+      - _enemyPrefab: {fileID: 260376984635252496, guid: 5b534126a1015d449b44e75c859cfa3f, type: 3}
+        _spawnWeight: 30
+      _spawnOnce: 0
+    - _name: 
+      _TStartEnd: {x: 40, y: 80}
+      _spawnSequence: 3.4
+      _enemies:
+      - _enemyPrefab: {fileID: 163513941162377340, guid: 5bc0f3b37cf55ff49832fe3ae067c307, type: 3}
+        _spawnWeight: 50
+      - _enemyPrefab: {fileID: 260376984635252496, guid: 5b534126a1015d449b44e75c859cfa3f, type: 3}
+        _spawnWeight: 50
+      _spawnOnce: 0
+    - _name: 
+      _TStartEnd: {x: 80, y: 100}
+      _spawnSequence: 3.4
+      _enemies:
+      - _enemyPrefab: {fileID: 163513941162377340, guid: 5bc0f3b37cf55ff49832fe3ae067c307, type: 3}
+        _spawnWeight: 60
+      - _enemyPrefab: {fileID: 260376984635252496, guid: 5b534126a1015d449b44e75c859cfa3f, type: 3}
+        _spawnWeight: 40
+      _spawnOnce: 0
+  - _waveDuration: 110
+    _name: 'Wave 14: Final Challenge'
+    _segments:
+    - _name: 
+      _TStartEnd: {x: 0, y: 30}
+      _spawnSequence: 3.6
+      _enemies:
+      - _enemyPrefab: {fileID: 163513941162377340, guid: 5bc0f3b37cf55ff49832fe3ae067c307, type: 3}
+        _spawnWeight: 80
+      - _enemyPrefab: {fileID: 260376984635252496, guid: 5b534126a1015d449b44e75c859cfa3f, type: 3}
+        _spawnWeight: 20
+      _spawnOnce: 0
+    - _name: 
+      _TStartEnd: {x: 30, y: 60}
+      _spawnSequence: 3.6
+      _enemies:
+      - _enemyPrefab: {fileID: 163513941162377340, guid: 5bc0f3b37cf55ff49832fe3ae067c307, type: 3}
+        _spawnWeight: 60
+      - _enemyPrefab: {fileID: 260376984635252496, guid: 5b534126a1015d449b44e75c859cfa3f, type: 3}
+        _spawnWeight: 40
+      _spawnOnce: 0
+    - _name: 
+      _TStartEnd: {x: 60, y: 90}
+      _spawnSequence: 3.6
+      _enemies:
+      - _enemyPrefab: {fileID: 163513941162377340, guid: 5bc0f3b37cf55ff49832fe3ae067c307, type: 3}
+        _spawnWeight: 70
+      - _enemyPrefab: {fileID: 260376984635252496, guid: 5b534126a1015d449b44e75c859cfa3f, type: 3}
+        _spawnWeight: 30
+      _spawnOnce: 0
+    - _name: 
+      _TStartEnd: {x: 90, y: 100}
+      _spawnSequence: 3.6
+      _enemies:
+      - _enemyPrefab: {fileID: 163513941162377340, guid: 5bc0f3b37cf55ff49832fe3ae067c307, type: 3}
+        _spawnWeight: 90
+      - _enemyPrefab: {fileID: 260376984635252496, guid: 5b534126a1015d449b44e75c859cfa3f, type: 3}
+        _spawnWeight: 10
+      _spawnOnce: 0
+  - _waveDuration: 120
+    _name: 'Wave 15: Ultimate Test'
+    _segments:
+    - _name: 
+      _TStartEnd: {x: 0, y: 20}
+      _spawnSequence: 4
+      _enemies:
+      - _enemyPrefab: {fileID: 163513941162377340, guid: 5bc0f3b37cf55ff49832fe3ae067c307, type: 3}
+        _spawnWeight: 100
+      _spawnOnce: 0
+    - _name: 
+      _TStartEnd: {x: 20, y: 40}
+      _spawnSequence: 4
+      _enemies:
+      - _enemyPrefab: {fileID: 163513941162377340, guid: 5bc0f3b37cf55ff49832fe3ae067c307, type: 3}
+        _spawnWeight: 70
+      - _enemyPrefab: {fileID: 260376984635252496, guid: 5b534126a1015d449b44e75c859cfa3f, type: 3}
+        _spawnWeight: 30
+      _spawnOnce: 0
+    - _name: 
+      _TStartEnd: {x: 40, y: 60}
+      _spawnSequence: 4
+      _enemies:
+      - _enemyPrefab: {fileID: 163513941162377340, guid: 5bc0f3b37cf55ff49832fe3ae067c307, type: 3}
+        _spawnWeight: 50
+      - _enemyPrefab: {fileID: 260376984635252496, guid: 5b534126a1015d449b44e75c859cfa3f, type: 3}
+        _spawnWeight: 50
+      _spawnOnce: 0
+    - _name: 
+      _TStartEnd: {x: 60, y: 80}
+      _spawnSequence: 4
+      _enemies:
+      - _enemyPrefab: {fileID: 163513941162377340, guid: 5bc0f3b37cf55ff49832fe3ae067c307, type: 3}
+        _spawnWeight: 60
+      - _enemyPrefab: {fileID: 260376984635252496, guid: 5b534126a1015d449b44e75c859cfa3f, type: 3}
+        _spawnWeight: 40
+      _spawnOnce: 0
+    - _name: 
+      _TStartEnd: {x: 80, y: 95}
+      _spawnSequence: 4
+      _enemies:
+      - _enemyPrefab: {fileID: 163513941162377340, guid: 5bc0f3b37cf55ff49832fe3ae067c307, type: 3}
+        _spawnWeight: 80
+      - _enemyPrefab: {fileID: 260376984635252496, guid: 5b534126a1015d449b44e75c859cfa3f, type: 3}
+        _spawnWeight: 20
+      _spawnOnce: 0
+    - _name: 
+      _TStartEnd: {x: 95, y: 100}
+      _spawnSequence: 4
+      _enemies:
+      - _enemyPrefab: {fileID: 163513941162377340, guid: a0fa3b59c9d439b48a603173d1c1a1fa, type: 3}
+        _spawnWeight: 100
+      _spawnOnce: 1
+--- !u!114 &1526143878635137532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4880463339307487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 796020579bab0d149ba577d22eee57a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _waveText: {fileID: 0}
+  _timerText: {fileID: 0}
+  _segmentText: {fileID: 0}
+  _normalWaveColor: {r: 0, g: 0, b: 0, a: 1}
+  _bossWaveColor: {r: 1, g: 0, b: 0, a: 1}

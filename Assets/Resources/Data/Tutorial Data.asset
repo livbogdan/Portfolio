@@ -1,0 +1,124 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 569e2b58ecdc9ed4897af55c498f6a7b, type: 3}
+  m_Name: Tutorial Data
+  m_EditorClassIdentifier: Assembly-CSharp::TutorialDataSO
+  <Tutorials>k__BackingField:
+  - _title: Core Gameplay
+    _steps:
+    - _description: Player Character Movement -Use Right Thumbstick to move left/right.
+      _image: {fileID: 0}
+    - _description: XP & Leveling - Gain experience during runs to level up by killing
+        enemy
+      _image: {fileID: 0}
+    - _description: Health Recovery System - Passive health regeneration
+      _image: {fileID: 0}
+    - _description: Luck System - Increases item rarity and drop rates
+      _image: {fileID: 0}
+    - _description: Rarity Tiers - Common, Uncommon, Rare, Legendary
+      _image: {fileID: 0}
+    - _description: Weapon Merger System - Combine duplicates into upgrades
+      _image: {fileID: 0}
+    - _description: Player Detection System - Enemy AI pathfinding and targeting
+      _image: {fileID: 0}
+    - _description: Player Detection System - Enemy AI pathfinding and targeting
+      _image: {fileID: 0}
+  - _title: Wave-Based Progression
+    _steps:
+    - _description: 15 structured waves scaling from 45 to 480+ enemies
+      _image: {fileID: 0}
+  - _title: Procedural Generation
+    _steps:
+    - _description: ' Infinitely generated maps with dynamic themes'
+      _image: {fileID: 0}
+  - _title: Combat
+    _steps:
+    - _description: 
+      _image: {fileID: 0}
+  - _title: Auto-Aim System
+    _steps:
+    - _description: ' Automatic targeting eliminates manual aiming'
+      _image: {fileID: 0}
+  - _title: Weapon
+    _steps:
+    - _description: 'Melee Weapons - 7 types: Sword, Axe, Hammer, Mace, Spear, Knife,
+        Shield'
+      _image: {fileID: 0}
+    - _description: Throwing Weapons - Dagger, Knife, Staff with auto-homing projectiles
+      _image: {fileID: 0}
+    - _description: Magic Weapons - Staff with longest range and high damage
+      _image: {fileID: 0}
+  - _title: Weapon Stats
+    _steps:
+    - _description: Critical Hit System - Chance-based massive damage multipliers
+        (120-250%)
+      _image: {fileID: 0}
+    - _description: Life Steal - Convert damage into healing (1-15% per weapon)
+      _image: {fileID: 0}
+    - _description: Armor & Damage Reduction - Reduce incoming damage via armor stat
+      _image: {fileID: 0}
+    - _description: Dodge System - Chance to completely avoid attacks
+      _image: {fileID: 0}
+  - _title: Weapon Stats
+    _steps:
+    - _description: Critical Hit System - Chance-based massive damage multipliers
+        (120-250%)
+      _image: {fileID: 0}
+    - _description: Life Steal - Convert damage into healing (1-15% per weapon)
+      _image: {fileID: 0}
+    - _description: Armor & Damage Reduction - Reduce incoming damage via armor stat
+      _image: {fileID: 0}
+    - _description: Dodge System - Chance to completely avoid attacks
+      _image: {fileID: 0}
+  - _title: Weapon Upgrade System
+    _steps:
+    - _description: Level up weapons to boost power by merge same tire
+      _image: {fileID: 0}
+  - _title: Character Unlock System
+    _steps:
+    - _description: Unlock character using gems or unluck by finish quest
+      _image: {fileID: 0}
+  - _title: Progression & Economy
+    _steps:
+    - _description: Dual Currency System - Coins (common) + Gems (premium)
+      _image: {fileID: 0}
+    - _description: Upgrade System - Permanent stat upgrades purchased with gems.
+        Boost base damage, health, critical chance, armor, dodge, and movement speed
+        across all future runs. Stack upgrades for exponential power growth.
+      _image: {fileID: 0}
+    - _description: Shop System - Buy weapons, equipment, consumables with coins
+      _image: {fileID: 0}
+    - _description: Reroll Mechanic - Refresh shop inventory for a coin cost
+      _image: {fileID: 0}
+    - _description: Equipment Boost System - 20+ items across 4 rarity tiers for
+        stat bonuses
+      _image: {fileID: 0}
+    - _description: Weapon Recycling - Convert weapons to coins (50% refund
+      _image: {fileID: 0}
+    - _description: Chest Drop System - Random loot drops with configurable rates
+      _image: {fileID: 0}
+  - _title: Waves & Enemies
+    _steps:
+    - _description: Progressive Difficulty - Each wave harder with more enemies
+      _image: {fileID: 0}
+    - _description: Boss Encounters - Special waves with powerful boss enemies
+      _image: {fileID: 0}
+    - _description: Enemy Variety - Light Melee, Heavy Armored, Ranged Attackers
+      _image: {fileID: 0}
+    - _description: Endless Mode - Infinite waves after wave 15 with scaling difficulty
+      _image: {fileID: 0}
+    - _description: Wave Transition System - Safe period between waves to shop and
+        prepare
+      _image: {fileID: 0}
+    - _description: "Map Theme Changes - Environments evolve: Plains \u2192 Forest
+        \u2192 Desert \u2192 Hell"
+      _image: {fileID: 0}

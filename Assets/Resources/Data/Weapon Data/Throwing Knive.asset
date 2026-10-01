@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03286a330db2326409fd70e2b4c01a29, type: 3}
+  m_Name: Throwing Knive
+  m_EditorClassIdentifier: 
+  <Prefab>k__BackingField: {fileID: 2420139179639633003, guid: fcabe019beb5c4548b499d043cc27eed, type: 3}
+  <WeaponName>k__BackingField: Throwing Knive
+  <WeaponDescription>k__BackingField: 
+  <WeaponSprite>k__BackingField: {fileID: 21300000, guid: 61105b610fc0df2478428f5ce9c9955c, type: 3}
+  <Price>k__BackingField: 380
+  <RecyclePrice>k__BackingField: 190
+  <AttackSound>k__BackingField: {fileID: 8300000, guid: e03951c2117858b4abd49c9c9661240c, type: 3}
+  <AnimatorOverrideController>k__BackingField: {fileID: 22100000, guid: 4678208627045c248a132daf3bb15f82, type: 2}
+  _attack: 20
+  _attackSpeed: 1.4
+  _criticalChance: 28
+  _criticalPercent: 1.45
+  _Range: 7
+  _lifeSteal: 3

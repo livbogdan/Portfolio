@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03286a330db2326409fd70e2b4c01a29, type: 3}
+  m_Name: Shield
+  m_EditorClassIdentifier: 
+  <Prefab>k__BackingField: {fileID: 1390899660697855122, guid: 3d4377d3967cc9a489137b6477cee59c, type: 3}
+  <WeaponName>k__BackingField: Defensive
+  <WeaponDescription>k__BackingField: 
+  <WeaponSprite>k__BackingField: {fileID: 21300000, guid: 739baa73cc8146d4c98ae5b4b6e79776, type: 3}
+  <Price>k__BackingField: 200
+  <RecyclePrice>k__BackingField: 100
+  <AttackSound>k__BackingField: {fileID: 8300000, guid: 67dd68818d4c53641b5ad50cc0afd09d, type: 3}
+  <AnimatorOverrideController>k__BackingField: {fileID: 22100000, guid: b3d9fcbf26af9d346b53a09730ed3652, type: 2}
+  _attack: 12
+  _attackSpeed: 1
+  _criticalChance: 5
+  _criticalPercent: 1.2
+  _Range: 2
+  _lifeSteal: 15
