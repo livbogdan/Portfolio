@@ -52,9 +52,9 @@ The code is organized around focused managers and gameplay components rather tha
 
 ## Download
 
-- [Download the source ZIP]() 
-- [Browse the source code]()
-- Playable PC build: included in this repository.
+- [Download the source ZIP](https://indie-xr-games.itch.io/rebirth-paradox) 
+- [Browse the source code](https://github.com/livbogdan/Portfolio/tree/master)
+- Playable PC and apk build: not included in this repository.
 
 ## What Was Removed or Excluded
 
